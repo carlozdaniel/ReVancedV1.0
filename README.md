@@ -12,9 +12,6 @@ By default this will build ReVanced with ALL available patches. You can modify t
 2. Download latest (compatible) APKs of Youtube and Youtube Music from APKMirror.com:
    - [Youtube 17.24.34](https://www.apkmirror.com/apk/google-inc/youtube/youtube-17-24-34-release/youtube-17-24-34-2-android-apk-download/)
      - Rename to `com.google.android.youtube.apk`
-   - [Youtube Music 5.03.50](https://www.apkmirror.com/apk/google-inc/youtube-music/youtube-music-5-03-50-release/)
-     - Choose correct version according to your device architecture
-     - Rename to `com.google.android.apps.youtube.music.apk`
 3. Publish a new release under tag `base` and upload the APKs to the release. ([Step 1](images/release_1.png), [Step 2](images/release_2.png))
 
 ## How to build
