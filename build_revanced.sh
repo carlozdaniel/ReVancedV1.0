@@ -91,3 +91,18 @@ then
 else
     echo "Cannot find YouTube Music APK, skipping build"
 fi
+echo ""
+echo "************************************"
+echo "Building YouTube Music APK Arch armeabi-v7a"
+echo "************************************"
+if [ -f "com.google.android.apps.youtube.music_armeabi-v7a.apk" ]
+then
+    echo "Building Root APK"
+    java -jar revanced-cli.jar -b revanced-patches.jar --mount \
+                               -e microg-support \
+                               -a com.google.android.apps.youtube.music.apk -o build/revanced-music-root_armeabi-v7a.apk
+    echo "Building Non-root APK"
+    java -jar revanced-cli.jar -b revanced-patches.jar \
+                               -a com.google.android.apps.youtube.music.apk -o build/revanced-music-nonroot_armeabi-v7a.apk
+else
+    echo "Cannot find YouTube Music APK armeabi-v7a, skipping build"
