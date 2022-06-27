@@ -106,3 +106,5 @@ then
                                -a com.google.android.apps.youtube.music.apk -o build/revanced-music-nonroot_armeabi-v7a.apk
 else
     echo "Cannot find YouTube Music APK armeabi-v7a, skipping build"
+    
+fi
